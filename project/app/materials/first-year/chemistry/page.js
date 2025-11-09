@@ -6,73 +6,73 @@ import { useState } from "react";
 
 const subjects = [
   {
-    id: "engineering-materials",
-    title: "Engineering Materials & Mechanics",
-    image: "/physics-engineering-materials.jpg",
-    href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringMaterialsMechanics",
+    id: "calculus-matrices",
+    title: "Calculus & Matrices",
+    image: "https://drive.google.com/uc?export=view&id=1r7JY2enZKDsHwPeJNG3B8iJhxcWSbQI_",
+    href: "https://www.mujtoppers.in/branch/first/subjects/CalculusMatrices",
     resources: [
-      { label: "PYQs", href: "https://drive.google.com/drive/u/0/folders/1w54A2Vd87DQtFwEoUuy8m0nX9rANb4RA" },
-      { label: "Topper Notes", href: "https://drive.google.com/drive/u/0/folders/1nxBvjZVxG2QL4W_B8skkg4z-VYibmF7n" },
-      { label: "Video Playlists", href: "https://www.youtube.com/playlist?list=PLB_MQaW6RcutYOUEk_7Je8K-Z3ixz_4TS" },
+      { label: "PYQs", href: "https://www.mujtoppers.in/branch/first/subjects/CalculusMatrices#pyqs" },
+      { label: "Topper Notes", href: "https://www.mujtoppers.in/branch/first/subjects/CalculusMatrices#topper-notes" },
+      { label: "Video Playlists", href: "https://www.mujtoppers.in/branch/first/subjects/CalculusMatrices#videos" },
       { label: "Roadmap", href: "/coming-soon" },
-      { label: "PPT Links", href: "https://drive.google.com/drive/u/1/folders/1WonGMHUbrQ_LnZrF024GMbiYZxuNUk_Z" },
+      { label: "PPT Links", href: "https://www.mujtoppers.in/branch/first/subjects/CalculusMatrices#ppt" },
     ],
   },
   {
-    id: "biology-for-engineers",
-    title: "Biology For Engineers",
-    image: "/physics-biology.jpg",
-    href: "https://www.mujtoppers.in/branch/first/subjects/BiologyForEngineers",
+    id: "electrical-electronics",
+    title: "Electrical & Electronics System",
+    image: "https://drive.google.com/uc?export=view&id=1aYcS7gt8soSOo0NGy9DIyg0YAa5qsrxF",
+    href: "https://www.mujtoppers.in/branch/first/subjects/ElectricalElectronicsSystem",
     resources: [
-      { label: "PYQs", href: "https://drive.google.com/drive/folders/1jxiFP_HFpCYDSPb2hwd2wJHZrYbgqPPz?usp=drive_link" },
-      { label: "Topper Notes", href: "https://drive.google.com/file/d/1s0PYtdlf8fIZvTwhY9I2LubZwSPWFgOH/view?usp=drive_link" },
-      { label: "Video Playlists", href: "https://www.youtube.com/playlist?list=PLB_MQaW6RcuukNazriXq2TZYTyq8D_5uR" },
+      { label: "PYQs", href: "https://www.mujtoppers.in/branch/first/subjects/ElectricalElectronicsSystem#pyqs" },
+      { label: "Topper Notes", href: "https://www.mujtoppers.in/branch/first/subjects/ElectricalElectronicsSystem#topper-notes" },
+      { label: "Video Playlists", href: "https://www.mujtoppers.in/branch/first/subjects/ElectricalElectronicsSystem#videos" },
       { label: "Roadmap", href: "/coming-soon" },
-      { label: "PPT Links", href: "https://drive.google.com/drive/folders/1JgGFDWvFm9N3Ur8K8-ylwTEKR55RqwNq?usp=drive_link" },
+      { label: "PPT Links", href: "https://www.mujtoppers.in/branch/first/subjects/ElectricalElectronicsSystem#ppt" },
     ],
   },
   {
-    id: "engineering-physics",
-    title: "Engineering Physics",
-    image: "/physics-engineering-physics.jpg",
-    href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringPhysics",
+    id: "engineering-chemistry",
+    title: "Engineering Chemistry",
+    image: "https://drive.google.com/uc?export=view&id=168b1gT3F4p6unOvraw4FQO_142aD7voY",
+    href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringChemistry",
     resources: [
-      { label: "PYQs", href: "https://drive.google.com/drive/folders/1JaOn7wg3bmtV8rYkXGSwcMbfoKHik6E5?usp=drive_link" },
-      { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1thY2E0lTfi5lLWc675FUhFaJ0xBlq_qF?usp=drive_link" },
-      { label: "Video Playlists", href: "https://www.youtube.com/playlist?list=PLuAADu3OvBt495Awir13ZNM-gv5IwLGQy" },
+      { label: "PYQs", href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringChemistry#pyqs" },
+      { label: "Topper Notes", href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringChemistry#topper-notes" },
+      { label: "Video Playlists", href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringChemistry#videos" },
       { label: "Roadmap", href: "/coming-soon" },
-      { label: "PPT Links", href: "https://drive.google.com/drive/folders/1qo2PcLf95yoRm1xVwjNzbLZ8pxTMLTMP?usp=drive_link" },
-    ],
-  },
-  {
-    id: "computational-mathematics",
-    title: "Computational Mathematics",
-    image: "/physics-computational-math.jpg",
-    href: "https://www.mujtoppers.in/branch/first/subjects/ComputationalMathematics",
-    resources: [
-      { label: "PYQs", href: "https://drive.google.com/drive/folders/1E9xiBOD7h4fPZmhdEPcgHbdfMCQFJShj?usp=drive_link" },
-      { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1uwQXdisM65p-Th-sUXc1TPh-X1mi8EbB?usp=drive_link" },
-      { label: "Video Playlists", href: "https://www.youtube.com/playlist?list=PLDh_nHdEw3KPPjngTAmQgcYY8zBA6kkX8" },
-      { label: "Roadmap", href: "/coming-soon" },
-      { label: "PPT Links", href: "https://drive.google.com/drive/folders/1WczQcbVvPcB294Jy3MjXcU_5u_-mbZMK?usp=drive_link" },
+      { label: "PPT Links", href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringChemistry#ppt" },
     ],
   },
   {
     id: "psuc",
-    title: "PSUC",
+    title: "Problem Solving using Computers",
     image: "https://drive.google.com/uc?export=view&id=12XnZ9NYxhznQJkrKKUo4bxUA1FPFTd9M",
-    href: "https://www.mujtoppers.in/branch/first/subjects/MATLAB",
+    href: "https://www.mujtoppers.in/branch/first/subjects/PSUC",
     resources: [
-      { label: "PYQs", href: "https://drive.google.com/drive/folders/1xSFhkhFRR1PH4ditPRf_FVIkfdK4JkRa?usp=drive_link" },
-      { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1sg0akPy_zBDDKiWKU_8pmuOTLlgyNtkq?usp=drive_link" },
-      { label: "Video Playlists", href: "https://www.youtube.com/watch?v=aZb0iu4uGwA&t=8493s" },
+      { label: "PYQs", href: "https://www.mujtoppers.in/branch/first/subjects/PSUC#pyqs" },
+      { label: "Topper Notes", href: "https://www.mujtoppers.in/branch/first/subjects/PSUC#topper-notes" },
+      { label: "Video Playlists", href: "https://www.mujtoppers.in/branch/first/subjects/PSUC#videos" },
       { label: "Roadmap", href: "/coming-soon" },
-      { label: "PPT Links", href: "https://drive.google.com/drive/folders/1QPtxeD2dVPCtpEcm3BX_G6vcyC8Wvyj8?usp=drive_link" },
+      { label: "PPT Links", href: "https://www.mujtoppers.in/branch/first/subjects/PSUC#ppt" },
+    ],
+  },
+  {
+    id: "technical-writing",
+    title: "Technical Writing using Computers",
+    image: "https://drive.google.com/uc?export=view&id=1INe2wYg489SO-kYD3Q41ntMakcNtBOCH",
+    href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting",
+    resources: [
+      { label: "PYQs", href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting#pyqs" },
+      { label: "Topper Notes", href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting#topper-notes" },
+      { label: "Video Playlists", href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting#videos" },
+      { label: "Roadmap", href: "/coming-soon" },
+      { label: "PPT Links", href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting#ppt" },
     ],
   },
 ];
 
-export default function PhysicsCycleSubjects() {
+export default function ChemistryCycleSubjects() {
   const [openSubject, setOpenSubject] = useState(null);
 
   return (
@@ -88,13 +88,13 @@ export default function PhysicsCycleSubjects() {
       <main className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-4 sm:px-6 lg:px-0">
         <header className="flex flex-col gap-5 text-center lg:max-w-3xl lg:text-left">
           <span className="inline-flex items-center justify-center gap-2 self-center rounded-full border border-white/15 bg-zinc-900/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white/85 backdrop-blur lg:self-start">
-            Physics Cycle
+            Chemistry Cycle
           </span>
           <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
             Pick Your <span style={{ color: '#ff6a00' }}>Subject</span> And Dive Into The Resources
           </h1>
           <p className="text-sm leading-relaxed text-zinc-600 sm:text-base">
-            Handpicked PDFs, PYQs, slide decks, and     lab files to keep your cycle prep focussed. Tap a subject to jump straight to the external
+            Handpicked PDFs, PYQs, slide decks, and lab files to keep your cycle prep focussed. Tap a subject to jump straight to the external
             resource listing.
           </p>
         </header>

@@ -2,64 +2,64 @@ import Link from "next/link";
 
 const branches = [
   {
-    id: "chemical-engineering",
-    title: "B Tech Chemical Engineering",
-    icon: "⚗️",
-    href: "/materials/btech/chemical-engineering",
-  },
-  {
-    id: "civil-engineering",
-    title: "B Tech Civil Engineering",
-    icon: "🏗️",
-    href: "/materials/btech/civil-engineering",
-  },
-  {
-    id: "computer-science-engineering",
-    title: "B Tech Computer Science & Engineering",
-    icon: "💻",
-    href: "/materials/btech/computer-science-engineering",
-  },
-  {
-    id: "electrical-computer-engineering",
-    title: "B Tech Electrical and Computer Engineering",
-    icon: "⚡",
-    href: "/materials/btech/electrical-computer-engineering",
-  },
-  {
-    id: "electronics-communication-engineering",
-    title: "B Tech Electronics & Communication Engineering",
-    icon: "📡",
-    href: "/materials/btech/electronics-communication-engineering",
-  },
-  {
-    id: "electronics-vlsi",
-    title: "B Tech Electronics Engineering (VLSI Design and Technology)",
-    icon: "🔬",
-    href: "/materials/btech/electronics-vlsi",
-  },
-  {
-    id: "mechanical-engineering",
-    title: "B Tech Mechanical Engineering",
-    icon: "⚙️",
-    href: "/materials/btech/mechanical-engineering",
-  },
-  {
-    id: "mechatronics-engineering",
-    title: "B Tech Mechatronics Engineering",
+    id: "aiml",
+    title: "AIML",
     icon: "🤖",
-    href: "/materials/btech/mechatronics-engineering",
+    href: "/materials/btech/aiml",
   },
   {
-    id: "computer-science-biosciences",
-    title: "B Tech Computer Science and Biosciences",
-    icon: "🧬",
-    href: "/materials/btech/computer-science-biosciences",
+    id: "automobile",
+    title: "AUTOMOBILE",
+    icon: "🚗",
+    href: "/materials/btech/automobile",
   },
   {
-    id: "robotics-ai",
-    title: "B Tech (Robotics and Artificial Intelligence)",
-    icon: "🦾",
-    href: "/materials/btech/robotics-ai",
+    id: "cce",
+    title: "CCE",
+    icon: "💻",
+    href: "/materials/btech/cce",
+  },
+  {
+    id: "cse",
+    title: "CSE",
+    icon: "🖥️",
+    href: "/materials/btech/cse",
+  },
+  {
+    id: "dse",
+    title: "DSE",
+    icon: "�",
+    href: "/materials/btech/dse",
+  },
+  {
+    id: "ece",
+    title: "ECE",
+    icon: "�",
+    href: "/materials/btech/ece",
+  },
+  {
+    id: "iot",
+    title: "IOT",
+    icon: "🌐",
+    href: "/materials/btech/iot",
+  },
+  {
+    id: "it",
+    title: "IT",
+    icon: "💾",
+    href: "/materials/btech/it",
+  },
+  {
+    id: "mechanical",
+    title: "MECHANICAL",
+    icon: "⚙️",
+    href: "/materials/btech/mechanical",
+  },
+  {
+    id: "mechatronics",
+    title: "MECHATRONICS",
+    icon: "🔧",
+    href: "/materials/btech/mechatronics",
   },
 ];
 
@@ -102,17 +102,17 @@ export default function BTechBranches() {
             <Link
               key={branch.id}
               href={branch.href}
-              className="group flex flex-col gap-4 rounded-3xl border border-zinc-200 bg-zinc-100/90 p-8 text-zinc-800 shadow-lg shadow-zinc-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl"
+              className="group flex flex-col gap-4 rounded-3xl border border-gray-200 bg-white p-8 text-zinc-800 shadow-lg shadow-gray-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500 hover:shadow-orange-100/50"
             >
               <div className="flex items-center gap-3">
                 <span className="text-3xl" aria-hidden="true">
                   {branch.icon}
                 </span>
               </div>
-              <h2 className="text-xl font-semibold leading-tight text-zinc-900 group-hover:text-sky-600 transition-colors duration-200">
+              <h2 className="text-xl font-semibold leading-tight text-zinc-900 group-hover:text-orange-600 transition-colors duration-200">
                 {branch.title}
               </h2>
-              <div className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-sky-600">
+              <div className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600">
                 View resources
                 <span aria-hidden="true">&gt;</span>
               </div>

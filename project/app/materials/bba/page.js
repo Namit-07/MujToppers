@@ -1,40 +1,30 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const cycles = [
+const years = [
   {
-    id: "physics-cycle",
-    icon: "🔬",
-    title: "Physics Cycle",
-    image: "/uc.webp",
+    id: "first-year",
+    icon: "📚",
+    title: "First Year",
+    image: "/bba-first-year.jpg",
     description:
-      "Mechanics, electromagnetism, and workshop essentials bundled into ready-to-use study paths.",
-    bullets: [
-      "Curated PYQs by unit",
-      "Lab viva companion sheets",
-      "Numerical problem banks",
-    ],
-    href: "/materials/first-year/physics",
-    cta: "Open physics resources",
+      "Foundation business courses and core fundamentals with curated lecture notes and PYQs.",
+    href: "/materials/bba/first-year",
+    cta: "Open first year resources",
   },
   {
-    id: "chemistry-cycle",
-    icon: "⚗️",
-    title: "Chemistry Cycle",
-    image: "/uc1.webp",
+    id: "second-year",
+    icon: "📈",
+    title: "Second Year",
+    image: "/bba-second-year.jpg",
     description:
-      "Chemistry concept sprints, environmental studies briefs, and practical experiment guides.",
-    bullets: [
-      "High-yield topic playlists",
-      "Experiment observation logs",
-      "Quiz-ready flash nuggets",
-    ],
-    href: "/materials/first-year/chemistry",
-    cta: "Open chemistry resources",
+      "Advanced business modules, finance briefs, and case-study breakdowns for second year.",
+    href: "/materials/bba/second-year",
+    cta: "Open second year resources",
   },
 ];
 
-export default function FirstYearPage() {
+export default function BBAPage() {
   return (
     <div className="relative min-h-screen overflow-hidden px-4 py-16 text-zinc-900 sm:px-8 lg:px-10">
       <div
@@ -55,33 +45,33 @@ export default function FirstYearPage() {
 
         <section className="flex flex-col gap-5 text-center lg:max-w-3xl lg:text-left">
           <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-             <span className="text-zinc-900">Explore </span>
-            <span className="text-[#ff6a00] animate-fade-in">First </span>
-            <span className="text-zinc-900">Year Cycle</span>
+            <span className="text-zinc-900">Explore </span>
+            <span className="text-[#ff6a00] animate-fade-in">BBA </span>
+            <span className="text-zinc-900">Years</span>
           </h1>
           <p className="text-sm leading-relaxed text-zinc-600 sm:text-base">
-            Pick your specialization and dive into curated study resources, notes, and more.
+            Pick your year and dive into curated business study resources, notes, and more.
           </p>
         </section>
 
-        <section className="grid gap-8 md:grid-cols-2">
-          {cycles.map((cycle) => (
+        <section className="grid gap-6 md:grid-cols-2">
+          {years.map((year) => (
             <article
-              key={cycle.id}
+              key={year.id}
               className="group flex h-full flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white text-zinc-800 shadow-lg shadow-gray-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500 hover:shadow-orange-100/50"
             >
               {/* Image */}
               <div className="relative aspect-21/9 overflow-hidden">
                 <Image
-                  src={cycle.image}
-                  alt={cycle.title}
+                  src={year.image}
+                  alt={year.title}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-900/0" aria-hidden="true" />
                 <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-900">
-                  {cycle.icon} {cycle.title.split(" ")[0]}
+                  {year.icon} {year.title.split(" ")[0]}
                 </span>
               </div>
 
@@ -89,15 +79,15 @@ export default function FirstYearPage() {
               <div className="flex flex-1 flex-col justify-between p-8">
                 <div className="flex flex-col gap-4">
                   <h2 className="text-3xl font-semibold text-zinc-900">
-                    <span style={{ color: "#ff6a00" }}>{cycle.title.split(" ")[0]}</span>{" "}
-                    {cycle.title.split(" ").slice(1).join(" ")}
+                    <span style={{ color: "#ff6a00" }}>{year.title.split(" ")[0]}</span>{" "}
+                    {year.title.split(" ").slice(1).join(" ")}
                   </h2>
                 </div>
                 <Link
-                  href={cycle.href}
+                  href={year.href}
                   className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600"
                 >
-                  {cycle.cta}
+                  {year.cta}
                   <span aria-hidden="true">&gt;</span>
                 </Link>
               </div>

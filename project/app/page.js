@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const tracks = [
   {
@@ -6,6 +7,7 @@ const tracks = [
     icon: "📚",
     title: "First Year",
     shortLabel: "FY",
+    image: "/first-year-college.jpg",
     description:
       "Foundation courses and core fundamentals with curated lecture notes and PYQs.",
     bullets: [
@@ -21,6 +23,7 @@ const tracks = [
     icon: "📈",
     title: "BBA",
     shortLabel: "BBA",
+    image: "/bba.webp",
     description:
       "Business modules, finance briefs, and case-study breakdowns tailored for MUJ BBA cohorts.",
     bullets: [
@@ -36,6 +39,7 @@ const tracks = [
     icon: "⚙️",
     title: "BTech",
     shortLabel: "BTech",
+    image: "/btech.png",
     description:
       "Branch-specific deep dives, project starter kits, and placement-focused resources.",
     bullets: [
@@ -70,42 +74,38 @@ export default function Home() {
           {tracks.map((track) => (
             <article
               key={track.id}
-              className="group flex h-full flex-col justify-between rounded-3xl border border-zinc-200 bg-zinc-100/90 p-8 text-zinc-800 shadow-lg shadow-zinc-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl"
+              className="group flex h-full flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white text-zinc-800 shadow-lg shadow-gray-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500 hover:shadow-orange-100/50"
             >
-              <div className="flex items-start justify-between">
-                <span className="text-4xl" aria-hidden="true">
-                  {track.icon}
-                </span>
-                <span className="rounded-full bg-zinc-200 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-600">
-                  {track.shortLabel}
+              {/* Image */}
+              <div className="relative aspect-video overflow-hidden">
+                <Image
+                  src={track.image}
+                  alt={track.title}
+                  fill
+                  className={`object-cover transition-transform duration-500 group-hover:scale-115 ${track.id === 'first-year' ? 'scale-125 object-center' : ''}`}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-900/0" aria-hidden="true" />
+                <span className="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-full bg-white/90 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-zinc-900">
+                  {track.icon} {track.shortLabel}
                 </span>
               </div>
-              <div className="mt-8 flex flex-col gap-4">
-                <h2 className="text-2xl font-semibold text-zinc-900">
-                  {track.title}
-                </h2>
-                <p className="text-sm leading-relaxed text-zinc-600">
-                  {track.description}
-                </p>
-                <ul className="space-y-2 text-sm text-zinc-600">
-                  {track.bullets.map((bullet) => (
-                    <li key={bullet} className="flex items-start gap-2">
-                      <span
-                        className="mt-1 block h-1.5 w-1.5 rounded-full bg-zinc-700"
-                        aria-hidden="true"
-                      />
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
+
+              {/* Content */}
+              <div className="flex flex-1 flex-col justify-between p-6">
+                <div className="flex flex-col gap-6">
+                  <h2 className="text-3xl font-semibold text-zinc-900">
+                    {track.title}
+                  </h2>
+                  <Link
+                    href={track.href}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600"
+                  >
+                    {track.cta}
+                    <span aria-hidden="true">&gt;</span>
+                  </Link>
+                </div>
               </div>
-              <Link
-                href={track.href}
-                className="mt-10 inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-sky-600"
-              >
-                {track.cta}
-                <span aria-hidden="true">&gt;</span>
-              </Link>
             </article>
           ))}
         </section>
