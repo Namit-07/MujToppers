@@ -58,8 +58,8 @@ const subjects = [
     ],
   },
   {
-    id: "technical-writing",
-    title: "Technical Writing using Computers",
+    id: "bme",
+    title: "BME",
     image: "https://drive.google.com/uc?export=view&id=1INe2wYg489SO-kYD3Q41ntMakcNtBOCH",
     href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting",
     resources: [
