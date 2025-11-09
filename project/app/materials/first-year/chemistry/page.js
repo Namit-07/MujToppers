@@ -6,68 +6,123 @@ import { useState } from "react";
 
 const subjects = [
   {
-    id: "calculus-matrices",
-    title: "Calculus & Matrices",
-    image: "https://drive.google.com/uc?export=view&id=1r7JY2enZKDsHwPeJNG3B8iJhxcWSbQI_",
-    href: "https://www.mujtoppers.in/branch/first/subjects/CalculusMatrices",
+    id: "bme",
+    title: "Basic Mechanical Engineering",
+    image: "/btech-2nd-year.jpg",
     resources: [
-      { label: "PYQs", href: "https://www.mujtoppers.in/branch/first/subjects/CalculusMatrices#pyqs" },
-      { label: "Topper Notes", href: "https://www.mujtoppers.in/branch/first/subjects/CalculusMatrices#topper-notes" },
-      { label: "Video Playlists", href: "https://www.mujtoppers.in/branch/first/subjects/CalculusMatrices#videos" },
+      { label: "PYQs", href: "/coming-soon" },
+      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "Video Playlists", href: "/coming-soon" },
       { label: "Roadmap", href: "/coming-soon" },
-      { label: "PPT Links", href: "https://www.mujtoppers.in/branch/first/subjects/CalculusMatrices#ppt" },
+      { label: "PPT Links", href: "/coming-soon" },
     ],
   },
   {
-    id: "electrical-electronics",
-    title: "Electrical & Electronics System",
-    image: "https://drive.google.com/uc?export=view&id=1aYcS7gt8soSOo0NGy9DIyg0YAa5qsrxF",
-    href: "https://www.mujtoppers.in/branch/first/subjects/ElectricalElectronicsSystem",
+    id: "cam",
+    title: "Calculus And Matrices",
+    image: "/btech-3rd-year.jpg",
     resources: [
-      { label: "PYQs", href: "https://www.mujtoppers.in/branch/first/subjects/ElectricalElectronicsSystem#pyqs" },
-      { label: "Topper Notes", href: "https://www.mujtoppers.in/branch/first/subjects/ElectricalElectronicsSystem#topper-notes" },
-      { label: "Video Playlists", href: "https://www.mujtoppers.in/branch/first/subjects/ElectricalElectronicsSystem#videos" },
+      { label: "PYQs", href: "/coming-soon" },
+      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "Video Playlists", href: "/coming-soon" },
       { label: "Roadmap", href: "/coming-soon" },
-      { label: "PPT Links", href: "https://www.mujtoppers.in/branch/first/subjects/ElectricalElectronicsSystem#ppt" },
+      { label: "PPT Links", href: "/coming-soon" },
+    ],
+  },
+  {
+    id: "communication",
+    title: "Communication Skills",
+    image: "/btech-4th-year.jpg",
+    resources: [
+      { label: "PYQs", href: "/coming-soon" },
+      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "Video Playlists", href: "/coming-soon" },
+      { label: "Roadmap", href: "/coming-soon" },
+      { label: "PPT Links", href: "/coming-soon" },
+    ],
+  },
+  {
+    id: "digital-systems",
+    title: "Digital Systems",
+    image: "/btech-2nd-year.jpg",
+    resources: [
+      { label: "PYQs", href: "/coming-soon" },
+      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "Video Playlists", href: "/coming-soon" },
+      { label: "Roadmap", href: "/coming-soon" },
+      { label: "PPT Links", href: "/coming-soon" },
+    ],
+  },
+  {
+    id: "eg",
+    title: "Engineering Graphics",
+    image: "/btech-3rd-year.jpg",
+    resources: [
+      { label: "PYQs", href: "/coming-soon" },
+      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "Video Playlists", href: "/coming-soon" },
+      { label: "Roadmap", href: "/coming-soon" },
+      { label: "PPT Links", href: "/coming-soon" },
+    ],
+  },
+  {
+    id: "electronics-circuits",
+    title: "Electronics Circuits",
+    image: "/btech-4th-year.jpg",
+    resources: [
+      { label: "PYQs", href: "/coming-soon" },
+      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "Video Playlists", href: "/coming-soon" },
+      { label: "Roadmap", href: "/coming-soon" },
+      { label: "PPT Links", href: "/coming-soon" },
     ],
   },
   {
     id: "engineering-chemistry",
     title: "Engineering Chemistry",
-    image: "https://drive.google.com/uc?export=view&id=168b1gT3F4p6unOvraw4FQO_142aD7voY",
-    href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringChemistry",
+    image: "/btech-2nd-year.jpg",
     resources: [
-      { label: "PYQs", href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringChemistry#pyqs" },
-      { label: "Topper Notes", href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringChemistry#topper-notes" },
-      { label: "Video Playlists", href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringChemistry#videos" },
+      { label: "PYQs", href: "/coming-soon" },
+      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "Video Playlists", href: "/coming-soon" },
       { label: "Roadmap", href: "/coming-soon" },
-      { label: "PPT Links", href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringChemistry#ppt" },
+      { label: "PPT Links", href: "/coming-soon" },
+    ],
+  },
+  {
+    id: "manufacturing",
+    title: "Manufacturing Process",
+    image: "/btech-3rd-year.jpg",
+    resources: [
+      { label: "PYQs", href: "/coming-soon" },
+      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "Video Playlists", href: "/coming-soon" },
+      { label: "Roadmap", href: "/coming-soon" },
+      { label: "PPT Links", href: "/coming-soon" },
     ],
   },
   {
     id: "psuc",
-    title: "Problem Solving using Computers",
-    image: "https://drive.google.com/uc?export=view&id=12XnZ9NYxhznQJkrKKUo4bxUA1FPFTd9M",
-    href: "https://www.mujtoppers.in/branch/first/subjects/PSUC",
+    title: "Problem Solving Using Computers",
+    image: "/btech-4th-year.jpg",
     resources: [
-      { label: "PYQs", href: "https://www.mujtoppers.in/branch/first/subjects/PSUC#pyqs" },
-      { label: "Topper Notes", href: "https://www.mujtoppers.in/branch/first/subjects/PSUC#topper-notes" },
-      { label: "Video Playlists", href: "https://www.mujtoppers.in/branch/first/subjects/PSUC#videos" },
+      { label: "PYQs", href: "/coming-soon" },
+      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "Video Playlists", href: "/coming-soon" },
       { label: "Roadmap", href: "/coming-soon" },
-      { label: "PPT Links", href: "https://www.mujtoppers.in/branch/first/subjects/PSUC#ppt" },
+      { label: "PPT Links", href: "/coming-soon" },
     ],
   },
   {
-    id: "bme",
-    title: "BME",
-    image: "https://drive.google.com/uc?export=view&id=1INe2wYg489SO-kYD3Q41ntMakcNtBOCH",
-    href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting",
+    id: "uhv",
+    title: "Universal Human Values",
+    image: "/btech-2nd-year.jpg",
     resources: [
-      { label: "PYQs", href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting#pyqs" },
-      { label: "Topper Notes", href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting#topper-notes" },
-      { label: "Video Playlists", href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting#videos" },
+      { label: "PYQs", href: "/coming-soon" },
+      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "Video Playlists", href: "/coming-soon" },
       { label: "Roadmap", href: "/coming-soon" },
-      { label: "PPT Links", href: "https://www.mujtoppers.in/branch/first/subjects/TechnicalWriting#ppt" },
+      { label: "PPT Links", href: "/coming-soon" },
     ],
   },
 ];
@@ -101,8 +156,8 @@ export default function ChemistryCycleSubjects() {
 
         <section className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {subjects.map((subject, index) => {
-            // Open upward for last 3 cards (bottom row), downward for first 2
-            const isBottomRow = index >= 3;
+            // Open upward for last 6 cards (bottom 2 rows), downward for first 4 (top row and second row)
+            const isBottomRow = index >= 6;
             
             return (
             <article
