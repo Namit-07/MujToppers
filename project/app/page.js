@@ -77,7 +77,7 @@ export default function Home() {
               className="group flex h-full flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white text-zinc-800 shadow-lg shadow-gray-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500 hover:shadow-orange-100/50"
             >
               {/* Image */}
-              <div className="relative aspect-video overflow-hidden">
+              <div className="relative aspect-4/3 overflow-hidden">
                 <Image
                   src={track.image}
                   alt={track.title}
@@ -86,20 +86,20 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-900/0" aria-hidden="true" />
-                <span className="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-full bg-white/90 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-zinc-900">
+                <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-1.5 text-sm font-semibold uppercase tracking-wide text-zinc-900">
                   {track.icon} {track.shortLabel}
                 </span>
               </div>
 
               {/* Content */}
-              <div className="flex flex-1 flex-col justify-between p-6">
-                <div className="flex flex-col gap-6">
-                  <h2 className="text-3xl font-semibold text-zinc-900">
+              <div className="flex flex-1 flex-col justify-between p-8">
+                <div className="flex flex-col gap-8">
+                  <h2 className="text-4xl font-semibold text-zinc-900">
                     {track.title}
                   </h2>
                   <Link
                     href={track.href}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600"
+                    className="inline-flex items-center gap-2 text-base font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600"
                   >
                     {track.cta}
                     <span aria-hidden="true">&gt;</span>
