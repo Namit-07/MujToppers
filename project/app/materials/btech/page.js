@@ -1,64 +1,75 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const branches = [
   {
     id: "aiml",
     title: "AIML",
     icon: "🤖",
+    image: "/Images/AIML.png",
     href: "/materials/btech/aiml",
   },
   {
     id: "automobile",
     title: "AUTOMOBILE",
     icon: "🚗",
+    image: "/Images/Automobile.png",
     href: "/materials/btech/automobile",
   },
   {
     id: "cce",
     title: "CCE",
     icon: "💻",
+    image: "/Images/CCE.png",
     href: "/materials/btech/cce",
   },
   {
     id: "cse",
     title: "CSE",
     icon: "🖥️",
+    image: "/Images/CSE.png",
     href: "/materials/btech/cse",
   },
   {
     id: "dse",
     title: "DSE",
-    icon: "�",
+    icon: "📊",
+    image: "/Images/DSE.png",
     href: "/materials/btech/dse",
   },
   {
     id: "ece",
     title: "ECE",
-    icon: "�",
+    icon: "⚡",
+    image: "/Images/ECE.png",
     href: "/materials/btech/ece",
   },
   {
     id: "iot",
     title: "IOT",
     icon: "🌐",
+    image: "/Images/IOT.png",
     href: "/materials/btech/iot",
   },
   {
     id: "it",
     title: "IT",
     icon: "💾",
+    image: "/Images/IT.png",
     href: "/materials/btech/it",
   },
   {
     id: "mechanical",
     title: "MECHANICAL",
     icon: "⚙️",
+    image: "/Images/mechanical.png",
     href: "/materials/btech/mechanical",
   },
   {
     id: "mechatronics",
     title: "MECHATRONICS",
     icon: "🔧",
+    image: "/Images/Mechatronics.png",
     href: "/materials/btech/mechatronics",
   },
 ];
@@ -102,19 +113,34 @@ export default function BTechBranches() {
             <Link
               key={branch.id}
               href={branch.href}
-              className="group flex flex-col gap-4 rounded-3xl border border-gray-200 bg-white p-8 text-zinc-800 shadow-lg shadow-gray-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500 hover:shadow-orange-100/50"
+              className="group flex h-full flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white text-zinc-800 shadow-lg shadow-gray-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500 hover:shadow-orange-100/50"
             >
-              <div className="flex items-center gap-3">
-                <span className="text-3xl" aria-hidden="true">
-                  {branch.icon}
+              {/* Image */}
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src={branch.image}
+                  alt={branch.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-900/0" aria-hidden="true" />
+                <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-900">
+                  {branch.icon} {branch.title}
                 </span>
               </div>
-              <h2 className="text-xl font-semibold leading-tight text-zinc-900 group-hover:text-orange-600 transition-colors duration-200">
-                {branch.title}
-              </h2>
-              <div className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600">
-                View resources
-                <span aria-hidden="true">&gt;</span>
+
+              {/* Content */}
+              <div className="flex flex-1 flex-col justify-between p-6">
+                <div className="flex flex-col gap-4">
+                  <h2 className="text-xl font-semibold leading-tight text-zinc-900 group-hover:text-orange-600 transition-colors duration-200">
+                    {branch.title}
+                  </h2>
+                  <div className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600">
+                    View resources
+                    <span aria-hidden="true">&gt;</span>
+                  </div>
+                </div>
               </div>
             </Link>
           ))}

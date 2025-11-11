@@ -9,7 +9,7 @@ const years = [
     id: "2nd-year",
     icon: "📚",
     title: "2nd Year",
-    image: "/btech-2nd-year.jpg",
+    image: "/Images/2nd year.png",
     description: "Core engineering courses and fundamentals with curated lecture notes and PYQs.",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
@@ -23,7 +23,7 @@ const years = [
     id: "3rd-year",
     icon: "📈",
     title: "3rd Year",
-    image: "/btech-3rd-year.jpg",
+    image: "/Images/THIRDYEAR .png",
     description: "Advanced topics, specialization courses, and project-based learning materials.",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
@@ -37,7 +37,7 @@ const years = [
     id: "4th-year",
     icon: "🎓",
     title: "4th Year",
-    image: "/btech-4th-year.jpg",
+    image: "/Images/FOURTHYEAR .png",
     description: "Final year projects, placement prep, and advanced elective course materials.",
     resources: [
       { label: "PYQs", href: "/coming-soon" },

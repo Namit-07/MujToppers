@@ -20,7 +20,7 @@ const subjects = [
   {
     id: "cam",
     title: "Calculus And Matrices",
-    image: "/btech-3rd-year.jpg",
+    image: "/Images/CAM.png",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/12GoSnbJ23iwIIOpoHXh_D6s7lNGBIZj0?usp=sharing" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1jYUROJAOM8qdC8PV068oBWgNYLFemrSP?usp=sharing" },
@@ -32,7 +32,7 @@ const subjects = [
   {
     id: "communication",
     title: "Communication Skills",
-    image: "/btech-4th-year.jpg",
+    image: "/Images/CS.png",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1YeLSrKw8RlW4bq8h9xiIL0cm0_XALBsL?usp=sharing" },
       { label: "Topper Notes", href: "/coming-soon" },
@@ -44,7 +44,7 @@ const subjects = [
   {
     id: "digital-systems",
     title: "Digital Systems",
-    image: "/btech-2nd-year.jpg",
+    image: "/Images/DS.png",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1yeExodboTvLqQlFLK1HpgUUqB9DCPzw9?usp=sharing" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1yeExodboTvLqQlFLK1HpgUUqB9DCPzw9?usp=sharing" },
@@ -56,7 +56,7 @@ const subjects = [
   {
     id: "eg",
     title: "Engineering Graphics",
-    image: "/btech-3rd-year.jpg",
+    image: "/Images/EG.png",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
       { label: "Topper Notes", href: "/coming-soon" },
@@ -68,7 +68,7 @@ const subjects = [
   {
     id: "electronics-circuits",
     title: "Electronics Circuits",
-    image: "/btech-4th-year.jpg",
+    image: "/Images/EC.png",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1COX_yd-Rc3P5MVjuvYr6Qj0xpxZL1g8L?usp=sharing" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1WScrhWKFeUoa5SzvWhHtEJCNsD0X3pbv?usp=sharing" },
@@ -80,7 +80,7 @@ const subjects = [
   {
     id: "engineering-chemistry",
     title: "Engineering Chemistry",
-    image: "/btech-2nd-year.jpg",
+    image: "/Images/CHEMISTRY.png",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1GD1HGrput-7Tuy6QxZtJu8MLQ8xXihcp?usp=sharing" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/18zJ9h_wWpwApCFPuBxh3XZqwJw1coffG?usp=sharing" },
@@ -92,7 +92,7 @@ const subjects = [
   {
     id: "manufacturing",
     title: "Manufacturing Process",
-    image: "/btech-3rd-year.jpg",
+    image: "/Images/MP.png",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
       { label: "Topper Notes", href: "/coming-soon" },
@@ -116,7 +116,7 @@ const subjects = [
   {
     id: "uhv",
     title: "Universal Human Values",
-    image: "/btech-2nd-year.jpg",
+    image: "/Images/UHV.png",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
       { label: "Topper Notes", href: "/coming-soon" },

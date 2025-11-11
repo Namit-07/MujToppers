@@ -70,6 +70,32 @@ const subjects = [
       { label: "PPT Links", href: "https://drive.google.com/drive/folders/1QPtxeD2dVPCtpEcm3BX_G6vcyC8Wvyj8?usp=drive_link" },
     ],
   },
+  {
+    id: "wcs",
+    title: "WCS",
+    image: "/Images/WCS.png",
+    href: "https://www.mujtoppers.in/branch/first/subjects/BiologyForEngineers",
+    resources: [
+      { label: "PYQs", href: "https://drive.google.com/drive/folders/1jxiFP_HFpCYDSPb2hwd2wJHZrYbgqPPz?usp=drive_link" },
+      { label: "Topper Notes", href: "https://drive.google.com/file/d/1s0PYtdlf8fIZvTwhY9I2LubZwSPWFgOH/view?usp=drive_link" },
+      { label: "Video Playlists", href: "https://www.youtube.com/playlist?list=PLB_MQaW6RcuukNazriXq2TZYTyq8D_5uR" },
+      { label: "Roadmap", href: "https://drive.google.com/file/d/1T5zICF1dFnYApzuu1nyw1vW_LbgAUasf/view?usp=sharing" },
+      { label: "PPT Links", href: "https://drive.google.com/drive/folders/1JgGFDWvFm9N3Ur8K8-ylwTEKR55RqwNq?usp=drive_link" },
+    ],
+  },
+  {
+    id: "evs",
+    title: "EVS",
+    image: "/Images/EVS.png",
+    href: "https://www.mujtoppers.in/branch/first/subjects/BiologyForEngineers",
+    resources: [
+      { label: "PYQs", href: "https://drive.google.com/drive/folders/1jxiFP_HFpCYDSPb2hwd2wJHZrYbgqPPz?usp=drive_link" },
+      { label: "Topper Notes", href: "https://drive.google.com/file/d/1s0PYtdlf8fIZvTwhY9I2LubZwSPWFgOH/view?usp=drive_link" },
+      { label: "Video Playlists", href: "https://www.youtube.com/playlist?list=PLB_MQaW6RcuukNazriXq2TZYTyq8D_5uR" },
+      { label: "Roadmap", href: "https://drive.google.com/file/d/1T5zICF1dFnYApzuu1nyw1vW_LbgAUasf/view?usp=sharing" },
+      { label: "PPT Links", href: "https://drive.google.com/drive/folders/1JgGFDWvFm9N3Ur8K8-ylwTEKR55RqwNq?usp=drive_link" },
+    ],
+  },
 ];
 
 export default function PhysicsCycleSubjects() {

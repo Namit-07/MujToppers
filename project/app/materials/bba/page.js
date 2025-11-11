@@ -16,7 +16,7 @@ const years = [
     id: "second-year",
     icon: "📈",
     title: "Second Year",
-    image: "/bba-second-year.jpg",
+    image: "/Images/2nd year.png",
     description:
       "Advanced business modules, finance briefs, and case-study breakdowns for second year.",
     href: "/materials/bba/second-year",
