@@ -43,7 +43,7 @@ body {
 
 /* Utility class for Google Drive hosted doodle background */
 .bg-study-doodle {
-  background-image: url('/study-doodle.jpg');
+  background-image: url('https://lh3.googleusercontent.com/d/1dj6QVDTHbo3xAjVWCoaEwgkLl0-0ge_Z');
   background-size: cover;
   background-position: center;
 }
