@@ -5,9 +5,35 @@ import { useState } from "react";
 
 const subjects = [
   {
+    id: "engineering-materials",
+    title: "Engineering Materials & Mechanics",
+    image: "/Images/emm.png",
+    href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringMaterialsMechanics",
+    resources: [
+      { label: "PYQs", href: "https://drive.google.com/drive/u/0/folders/1w54A2Vd87DQtFwEoUuy8m0nX9rANb4RA" },
+      { label: "Topper Notes", href: "https://drive.google.com/drive/u/0/folders/1nxBvjZVxG2QL4W_B8skkg4z-VYibmF7n" },
+      { label: "Video Playlists", href: "https://www.youtube.com/playlist?list=PLB_MQaW6RcutYOUEk_7Je8K-Z3ixz_4TS" },
+      { label: "Roadmap", href: "https://drive.google.com/file/d/1fjGChZpP3rbzVkZ0paTMR6RGLOpsg7OH/view?usp=sharing" },
+      { label: "PPT Links", href: "https://drive.google.com/drive/u/1/folders/1WonGMHUbrQ_LnZrF024GMbiYZxuNUk_Z" },
+    ],
+  },
+  {
+    id: "biology-for-engineers",
+    title: "Biology For Engineers",
+    image: "/Images/bfe.png",
+    href: "https://www.mujtoppers.in/branch/first/subjects/BiologyForEngineers",
+    resources: [
+      { label: "PYQs", href: "https://drive.google.com/drive/folders/1jxiFP_HFpCYDSPb2hwd2wJHZrYbgqPPz?usp=drive_link" },
+      { label: "Topper Notes", href: "https://drive.google.com/file/d/1s0PYtdlf8fIZvTwhY9I2LubZwSPWFgOH/view?usp=drive_link" },
+      { label: "Video Playlists", href: "https://www.youtube.com/playlist?list=PLB_MQaW6RcuukNazriXq2TZYTyq8D_5uR" },
+      { label: "Roadmap", href: "https://drive.google.com/file/d/1T5zICF1dFnYApzuu1nyw1vW_LbgAUasf/view?usp=sharing" },
+      { label: "PPT Links", href: "https://drive.google.com/drive/folders/1JgGFDWvFm9N3Ur8K8-ylwTEKR55RqwNq?usp=drive_link" },
+    ],
+  },
+  {
     id: "engineering-physics",
     title: "Engineering Physics",
-    image: "https://lh3.googleusercontent.com/d/1QCfejlbeRO0kpAtty2lWBn63khnO95xt",
+    image: "/Images/ep.png",
     href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringPhysics",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1JaOn7wg3bmtV8rYkXGSwcMbfoKHik6E5?usp=drive_link" },
@@ -20,7 +46,7 @@ const subjects = [
   {
     id: "computational-mathematics",
     title: "Computational Mathematics",
-    image: "https://lh3.googleusercontent.com/d/1hisb4ZBSJfngIez3m1HXLrFTTy1UCq24",
+    image: "/Images/cm.png",
     href: "https://www.mujtoppers.in/branch/first/subjects/ComputationalMathematics",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1E9xiBOD7h4fPZmhdEPcgHbdfMCQFJShj?usp=drive_link" },
@@ -33,7 +59,7 @@ const subjects = [
   {
     id: "psuc",
     title: "PSUC",
-    image: "https://lh3.googleusercontent.com/d/1qNmcdINQ1sgw6dVt2AaUsF2z3-ucWqNZ",
+    image: "/Images/psuc.png",
     href: "https://www.mujtoppers.in/branch/first/subjects/MATLAB",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1xSFhkhFRR1PH4ditPRf_FVIkfdK4JkRa?usp=drive_link" },
@@ -46,7 +72,7 @@ const subjects = [
   {
     id: "wcs",
     title: "WCS",
-    image: "https://lh3.googleusercontent.com/d/1n3ruALsALtnMSccMInUch_83O7MXDKgG",
+    image: "/Images/WCS.png",
     href: "https://www.mujtoppers.in/branch/first/subjects/BiologyForEngineers",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1jxiFP_HFpCYDSPb2hwd2wJHZrYbgqPPz?usp=drive_link" },
@@ -59,7 +85,7 @@ const subjects = [
   {
     id: "evs",
     title: "EVS",
-    image: "https://lh3.googleusercontent.com/d/1fC03trFyiq4_laftnwfPbJ8OR8uCJMU_",
+    image: "/Images/EVS.png",
     href: "https://www.mujtoppers.in/branch/first/subjects/BiologyForEngineers",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1jxiFP_HFpCYDSPb2hwd2wJHZrYbgqPPz?usp=drive_link" },
@@ -108,30 +134,21 @@ export default function PhysicsCycleSubjects() {
               key={subject.id}
               className={`relative flex h-full flex-col overflow-visible rounded-3xl border border-gray-200 bg-white text-zinc-800 shadow-lg shadow-gray-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500 hover:shadow-orange-100/50 ${openSubject === subject.id ? "z-30" : "z-0"}`}
             >
-              <a
-                href={subject.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <div className="relative h-48 w-full overflow-hidden rounded-t-3xl">
-                  <img
-                    src={subject.image}
-                    alt={subject.title}
-                    className="absolute inset-0 h-full w-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-900/0" aria-hidden="true" />
-                  <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-900">
-                    📚 Click to open subject
-                  </span>
-                </div>
-                <div className="p-8 pb-4">
-                  <h2 className="text-xl font-semibold leading-tight text-zinc-900 hover:text-orange-600 transition-colors">
-                    {subject.title}
-                  </h2>
-                </div>
-              </a>
-              <div className="flex flex-1 flex-col gap-6 px-8 pb-8">
+              <div className="relative h-48 w-full overflow-hidden rounded-t-3xl">
+                <img
+                  src={subject.image}
+                  alt={subject.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-900/0" aria-hidden="true" />
+                <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-900">
+                  📚 Select a Resource
+                </span>
+              </div>
+              <div className="flex flex-1 flex-col gap-6 p-8">
+                <h2 className="text-xl font-semibold leading-tight text-zinc-900">
+                  {subject.title}
+                </h2>
                 <button
                   type="button"
                   onClick={() => setOpenSubject((prev) => (prev === subject.id ? null : subject.id))}
