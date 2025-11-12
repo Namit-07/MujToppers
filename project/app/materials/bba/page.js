@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+// Force rebuild - using img tags instead of Next.js Image component
 const years = [
   {
     id: "first-year",
