@@ -9,7 +9,7 @@ const years = [
     id: "2nd-year",
     icon: "📚",
     title: "2nd Year",
-    image: "/Images/2nd year.png",
+    image: "/Images/2nd%20year.png",
     description: "Core engineering courses and fundamentals with curated lecture notes and PYQs.",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
@@ -23,7 +23,7 @@ const years = [
     id: "3rd-year",
     icon: "📈",
     title: "3rd Year",
-    image: "/Images/THIRDYEAR .png",
+    image: "/Images/THIRDYEAR%20.png",
     description: "Advanced topics, specialization courses, and project-based learning materials.",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
@@ -37,7 +37,7 @@ const years = [
     id: "4th-year",
     icon: "🎓",
     title: "4th Year",
-    image: "/Images/FOURTHYEAR .png",
+    image: "/Images/FOURTHYEAR%20.png",
     description: "Final year projects, placement prep, and advanced elective course materials.",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
