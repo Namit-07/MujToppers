@@ -77,12 +77,10 @@ export default function Home() {
             >
               {/* Image */}
               <div className="relative aspect-4/3 overflow-hidden">
-                <Image
+                <img
                   src={track.image}
                   alt={track.title}
-                  fill
-                  className={`object-cover transition-transform duration-500 group-hover:scale-115 ${track.id === 'first-year' ? 'scale-125 object-center' : ''}`}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className={`absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-115 ${track.id === 'first-year' ? 'scale-125 object-center' : ''}`}
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-900/0" aria-hidden="true" />
                 <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-1.5 text-sm font-semibold uppercase tracking-wide text-zinc-900">
