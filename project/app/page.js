@@ -7,7 +7,7 @@ const tracks = [
     icon: "📚",
     title: "First Year",
     shortLabel: "FY",
-    image: "/Images/first year.png",
+    image: "https://drive.google.com/file/d/12IcyZQi37bXuFb7GJ_a9BKkjtUwSiJ--/view?usp=drive_link",
     description:
       "Foundation courses and core fundamentals with curated lecture notes and PYQs.",
     bullets: [
@@ -23,7 +23,7 @@ const tracks = [
     icon: "📈",
     title: "BBA",
     shortLabel: "BBA",
-    image: "/bba.webp",
+    image: "https://drive.google.com/file/d/12IcyZQi37bXuFb7GJ_a9BKkjtUwSiJ--/view?usp=drive_link",
     description:
       "Business modules, finance briefs, and case-study breakdowns tailored for MUJ BBA cohorts.",
     bullets: [
@@ -56,7 +56,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden px-4 py-16 text-zinc-900 sm:px-8 lg:px-10">
       <div
-        className="absolute inset-0 -z-20 bg-[url('/study-doodle.jpg')] bg-cover bg-center"
+        className="absolute inset-0 -z-20 bg-study-doodle bg-cover bg-center"
         aria-hidden="true"
       />
       <div

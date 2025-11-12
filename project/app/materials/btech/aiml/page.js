@@ -37,7 +37,7 @@ const years = [
     icon: "🎓",
     title: "4th Year",
     image: "https://drive.google.com/uc?export=view&id=1R0KHNYsTXQN0z7JoqeowUxZTTdB8-iZ8",
-    description: "Final year projects, placement prep, and advanced elective course materials.",
+    description: "Final year p  rojects, placement prep, and advanced elective course materials.",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
       { label: "Topper Notes", href: "/coming-soon" },
@@ -53,7 +53,7 @@ export default function AIMLPage() {
   return (
     <div className="relative min-h-screen overflow-hidden px-4 py-16 text-zinc-900 sm:px-8 lg:px-10">
       <div
-        className="absolute inset-0 -z-20 bg-[url('/study-doodle.jpg')] bg-cover bg-center"
+        className="absolute inset-0 -z-20 bg-study-doodle bg-cover bg-center"
         aria-hidden="true"
       />
       <div

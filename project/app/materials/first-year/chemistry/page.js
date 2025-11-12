@@ -8,7 +8,7 @@ const subjects = [
   {
     id: "bme",
     title: "Basic Mechanical Engineering",
-    image: "/Images/bme.png",
+    image: "https://drive.google.com/file/d/11a5cvbC7YpQn4boHbrh6kPIVUO8xzJuU/view?usp=drive_link",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1iFt8KI6RlCJuKmh_eS5BrpZTY9zceAtF?usp=drive_link" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1LDW0nEprx0ist_bksa1yfVvkkSVUSiVY?usp=drive_link" },
@@ -20,7 +20,7 @@ const subjects = [
   {
     id: "cam",
     title: "Calculus And Matrices",
-    image: "/Images/CAM.png",
+    image: "https://drive.google.com/file/d/1z5kUxQ7anWM2lZP7xO0Um8FjUnQtp_n9/view?usp=drive_link",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/12GoSnbJ23iwIIOpoHXh_D6s7lNGBIZj0?usp=sharing" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1jYUROJAOM8qdC8PV068oBWgNYLFemrSP?usp=sharing" },
@@ -32,7 +32,7 @@ const subjects = [
   {
     id: "communication",
     title: "Communication Skills",
-    image: "/Images/CS.png",
+    image: "https://drive.google.com/file/d/1v3a1pK0Z-8M39Qy3lzkKxUx6aNl8bTs4/view?usp=drive_link",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1YeLSrKw8RlW4bq8h9xiIL0cm0_XALBsL?usp=sharing" },
       { label: "Topper Notes", href: "/coming-soon" },
@@ -44,7 +44,7 @@ const subjects = [
   {
     id: "digital-systems",
     title: "Digital Systems",
-    image: "/Images/DS.png",
+    image: "https://drive.google.com/file/d/16DCGRHQ47_AONewupSgHI2Bu4AIxlNts/view?usp=drive_link",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1yeExodboTvLqQlFLK1HpgUUqB9DCPzw9?usp=sharing" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1yeExodboTvLqQlFLK1HpgUUqB9DCPzw9?usp=sharing" },
@@ -56,7 +56,7 @@ const subjects = [
   {
     id: "eg",
     title: "Engineering Graphics",
-    image: "/Images/EG.png",
+    image: "https://drive.google.com/file/d/1JSy-5VyjEQr0MmWlbmI0kHkUKAWwdL1q/view?usp=drive_link",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
       { label: "Topper Notes", href: "/coming-soon" },
@@ -68,7 +68,7 @@ const subjects = [
   {
     id: "electronics-circuits",
     title: "Electronics Circuits",
-    image: "/Images/EC.png",
+    image: "https://drive.google.com/file/d/1z85zcd5EZ21t9d4T54gR8_ipA4UwT0dY/view?usp=drive_link",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1COX_yd-Rc3P5MVjuvYr6Qj0xpxZL1g8L?usp=sharing" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1WScrhWKFeUoa5SzvWhHtEJCNsD0X3pbv?usp=sharing" },
@@ -80,7 +80,7 @@ const subjects = [
   {
     id: "engineering-chemistry",
     title: "Engineering Chemistry",
-    image: "/Images/CHEMISTRY.png",
+    image: "https://drive.google.com/file/d/1MqrNRIk3J15k-rvr1MWGKtDyR5wM0u1b/view?usp=drive_link",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1GD1HGrput-7Tuy6QxZtJu8MLQ8xXihcp?usp=sharing" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/18zJ9h_wWpwApCFPuBxh3XZqwJw1coffG?usp=sharing" },
@@ -92,7 +92,7 @@ const subjects = [
   {
     id: "manufacturing",
     title: "Manufacturing Process",
-    image: "/Images/MP.png",
+    image: "https://drive.google.com/file/d/1E3PvbXn7CnkhZzVFUjMf4mx55e3TTtGr/view?usp=drive_link",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
       { label: "Topper Notes", href: "/coming-soon" },
@@ -104,7 +104,7 @@ const subjects = [
   {
     id: "psuc",
     title: "Problem Solving Using Computers",
-    image: "/Images/psuc.png",
+    image: "https://drive.google.com/file/d/1qNmcdINQ1sgw6dVt2AaUsF2z3-ucWqNZ/view?usp=drive_link",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1uCD8YvS2FX9jSoSpuRSvkeNMPVzXvg29?usp=sharing" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1teWpDZeuxAY17BzwD00TMB0QCFdaoDWO?usp=sharing" },
@@ -116,7 +116,7 @@ const subjects = [
   {
     id: "uhv",
     title: "Universal Human Values",
-    image: "/Images/UHV.png",
+    image: "https://drive.google.com/file/d/1FzEx20wSMwJv31pkTmz5a94PmrpHsZJg/view?usp=drive_link",
     resources: [
       { label: "PYQs", href: "/coming-soon" },
       { label: "Topper Notes", href: "/coming-soon" },
@@ -133,7 +133,7 @@ export default function ChemistryCycleSubjects() {
   return (
     <div className="relative min-h-screen overflow-hidden px-4 py-16 text-zinc-900 sm:px-8 lg:px-10">
       <div
-        className="absolute inset-0 -z-20 bg-[url('/study-doodle.jpg')] bg-cover bg-center"
+        className="absolute inset-0 -z-20 bg-study-doodle bg-cover bg-center"
         aria-hidden="true"
       />
       <div

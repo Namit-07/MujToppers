@@ -40,3 +40,9 @@ body {
 .animate-fade-in {
   animation: fadeIn 1.5s ease-out;
 }
+
+/* Utility class for Google Drive hosted doodle background */
+.bg-study-doodle {
+  background-image: url('https://drive.google.com/uc?export=view&id=1dj6QVDTHbo3xAjVWCoaEwgkLl0-0ge_Z');
+}
+

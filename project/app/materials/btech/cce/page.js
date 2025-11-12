@@ -55,7 +55,7 @@ export default function CCEPage() {
   return (
     <div className="relative min-h-screen overflow-hidden px-4 py-16 text-zinc-900 sm:px-8 lg:px-10">
       <div
-        className="absolute inset-0 -z-20 bg-[url('/study-doodle.jpg')] bg-cover bg-center"
+        className="absolute inset-0 -z-20 bg-study-doodle bg-cover bg-center"
         aria-hidden="true"
       />
       <div
