@@ -71,8 +71,9 @@ export default function Home() {
 
         <section className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {tracks.map((track) => (
-            <article
+            <Link
               key={track.id}
+              href={track.href}
               className="group flex h-full flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white text-zinc-800 shadow-lg shadow-gray-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500 hover:shadow-orange-100/50"
             >
               {/* Image */}
@@ -91,19 +92,16 @@ export default function Home() {
               {/* Content */}
               <div className="flex flex-1 flex-col justify-between p-8">
                 <div className="flex flex-col gap-8">
-                  <h2 className="text-4xl font-semibold text-zinc-900">
+                  <h2 className="text-4xl font-semibold text-zinc-900 group-hover:text-orange-600 transition-colors">
                     {track.title}
                   </h2>
-                  <Link
-                    href={track.href}
-                    className="inline-flex items-center gap-2 text-base font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600"
-                  >
+                  <span className="inline-flex items-center gap-2 text-base font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600">
                     {track.cta}
                     <span aria-hidden="true">&gt;</span>
-                  </Link>
+                  </span>
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </section>
       </main>

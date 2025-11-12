@@ -55,8 +55,9 @@ export default function BBAPage() {
 
         <section className="grid gap-6 md:grid-cols-2">
           {years.map((year) => (
-            <article
+            <Link
               key={year.id}
+              href={year.href}
               className="group flex h-full flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white text-zinc-800 shadow-lg shadow-gray-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500 hover:shadow-orange-100/50"
             >
               {/* Image */}
@@ -75,20 +76,17 @@ export default function BBAPage() {
               {/* Content */}
               <div className="flex flex-1 flex-col justify-between p-8">
                 <div className="flex flex-col gap-4">
-                  <h2 className="text-3xl font-semibold text-zinc-900">
+                  <h2 className="text-3xl font-semibold text-zinc-900 transition-colors group-hover:text-orange-600">
                     <span style={{ color: "#ff6a00" }}>{year.title.split(" ")[0]}</span>{" "}
                     {year.title.split(" ").slice(1).join(" ")}
                   </h2>
                 </div>
-                <Link
-                  href={year.href}
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600"
-                >
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-zinc-700 transition-colors duration-200 group-hover:text-orange-600">
                   {year.cta}
                   <span aria-hidden="true">&gt;</span>
-                </Link>
+                </span>
               </div>
-            </article>
+            </Link>
           ))}
         </section>
       </main>

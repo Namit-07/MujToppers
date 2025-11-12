@@ -69,6 +69,19 @@ const subjects = [
       { label: "PPT Links", href: "https://drive.google.com/drive/folders/1JgGFDWvFm9N3Ur8K8-ylwTEKR55RqwNq?usp=drive_link" },
     ],
   },
+  {
+    id: "biology-for-engineers",
+    title: "Biology for Engineers",
+    image: "https://lh3.googleusercontent.com/d/1R0KHNYsTXQN0z7JoqeowUxZTTdB8-iZ8",
+    href: "https://www.mujtoppers.in/branch/first/subjects/BiologyForEngineers",
+    resources: [
+      { label: "PYQs", href: "https://drive.google.com/drive/folders/1jxiFP_HFpCYDSPb2hwd2wJHZrYbgqPPz?usp=drive_link" },
+      { label: "Topper Notes", href: "https://drive.google.com/file/d/1s0PYtdlf8fIZvTwhY9I2LubZwSPWFgOH/view?usp=drive_link" },
+      { label: "Video Playlists", href: "https://www.youtube.com/playlist?list=PLB_MQaW6RcuukNazriXq2TZYTyq8D_5uR" },
+      { label: "Roadmap", href: "https://drive.google.com/file/d/1T5zICF1dFnYApzuu1nyw1vW_LbgAUasf/view?usp=sharing" },
+      { label: "PPT Links", href: "https://drive.google.com/drive/folders/1JgGFDWvFm9N3Ur8K8-ylwTEKR55RqwNq?usp=drive_link" },
+    ],
+  },
 ];
 
 export default function PhysicsCycleSubjects() {
@@ -108,30 +121,24 @@ export default function PhysicsCycleSubjects() {
               key={subject.id}
               className={`relative flex h-full flex-col overflow-visible rounded-3xl border border-gray-200 bg-white text-zinc-800 shadow-lg shadow-gray-900/5 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500 hover:shadow-orange-100/50 ${openSubject === subject.id ? "z-30" : "z-0"}`}
             >
-              <a
-                href={subject.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <div className="relative h-48 w-full overflow-hidden rounded-t-3xl">
-                  <img
-                    src={subject.image}
-                    alt={subject.title}
-                    className="absolute inset-0 h-full w-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-900/0" aria-hidden="true" />
-                  <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-900">
-                    📚 Click to open subject
-                  </span>
-                </div>
-                <div className="p-8 pb-4">
-                  <h2 className="text-xl font-semibold leading-tight text-zinc-900 hover:text-orange-600 transition-colors">
-                    {subject.title}
-                  </h2>
-                </div>
-              </a>
-              <div className="flex flex-1 flex-col gap-6 px-8 pb-8">
+              {/* Image */}
+              <div className="relative h-48 w-full overflow-hidden rounded-t-3xl">
+                <img
+                  src={subject.image}
+                  alt={subject.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-900/0" aria-hidden="true" />
+                <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-900">
+                  📚 {subject.title}
+                </span>
+              </div>
+
+              {/* Content */}
+              <div className="flex flex-1 flex-col gap-6 p-8">
+                <h2 className="text-xl font-semibold leading-tight text-zinc-900">
+                  {subject.title}
+                </h2>
                 <button
                   type="button"
                   onClick={() => setOpenSubject((prev) => (prev === subject.id ? null : subject.id))}
