@@ -38,7 +38,7 @@ const tracks = [
     icon: "⚙️",
     title: "BTech",
     shortLabel: "BTech",
-    image: "/btech.png",
+    image: "https://lh3.googleusercontent.com/d/12IcyZQi37bXuFb7GJ_a9BKkjtUwSiJ--",
     description:
       "Branch-specific deep dives, project starter kits, and placement-focused resources.",
     bullets: [
