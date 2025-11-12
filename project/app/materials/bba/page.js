@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-// Force rebuild - using img tags instead of Next.js Image component
+// Using Google Drive hosted images for better compatibility
 const years = [
   {
     id: "first-year",
     icon: "📚",
     title: "First Year",
-    image: "/images/first-year.png",
+    image: "https://drive.google.com/uc?export=view&id=1XwwqRAAplENuLs43SSNAnd9Z9n-M8rN3",
     description:
       "Foundation business courses and core fundamentals with curated lecture notes and PYQs.",
     href: "/materials/bba/first-year",
@@ -16,7 +16,7 @@ const years = [
     id: "second-year",
     icon: "📈",
     title: "Second Year",
-    image: "/images/2nd-year.png",
+    image: "https://drive.google.com/uc?export=view&id=1l1L2lUgTLkuZ3a0B52CO9-mcUtyVR48m",
     description:
       "Advanced business modules, finance briefs, and case-study breakdowns for second year.",
     href: "/materials/bba/second-year",
