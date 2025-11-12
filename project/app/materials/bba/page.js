@@ -6,7 +6,7 @@ const years = [
     id: "first-year",
     icon: "📚",
     title: "First Year",
-    image: "/bba-first-year.jpg",
+    image: "/Images/first year.png",
     description:
       "Foundation business courses and core fundamentals with curated lecture notes and PYQs.",
     href: "/materials/bba/first-year",

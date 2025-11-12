@@ -8,7 +8,7 @@ const subjects = [
   {
     id: "engineering-materials",
     title: "Engineering Materials & Mechanics",
-    image: "/physics-engineering-materials.jpg",
+    image: "/Images/emm.png",
     href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringMaterialsMechanics",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/u/0/folders/1w54A2Vd87DQtFwEoUuy8m0nX9rANb4RA" },
@@ -21,7 +21,7 @@ const subjects = [
   {
     id: "biology-for-engineers",
     title: "Biology For Engineers",
-    image: "/physics-biology.jpg",
+    image: "/Images/bfe.png",
     href: "https://www.mujtoppers.in/branch/first/subjects/BiologyForEngineers",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1jxiFP_HFpCYDSPb2hwd2wJHZrYbgqPPz?usp=drive_link" },
@@ -34,7 +34,7 @@ const subjects = [
   {
     id: "engineering-physics",
     title: "Engineering Physics",
-    image: "/physics-engineering-physics.jpg",
+    image: "/Images/ep.png",
     href: "https://www.mujtoppers.in/branch/first/subjects/EngineeringPhysics",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1JaOn7wg3bmtV8rYkXGSwcMbfoKHik6E5?usp=drive_link" },
@@ -47,7 +47,7 @@ const subjects = [
   {
     id: "computational-mathematics",
     title: "Computational Mathematics",
-    image: "/physics-computational-math.jpg",
+    image: "/Images/cm.png",
     href: "https://www.mujtoppers.in/branch/first/subjects/ComputationalMathematics",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1E9xiBOD7h4fPZmhdEPcgHbdfMCQFJShj?usp=drive_link" },
@@ -60,7 +60,7 @@ const subjects = [
   {
     id: "psuc",
     title: "PSUC",
-    image: "https://drive.google.com/uc?export=view&id=12XnZ9NYxhznQJkrKKUo4bxUA1FPFTd9M",
+    image: "/Images/psuc.png",
     href: "https://www.mujtoppers.in/branch/first/subjects/MATLAB",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1xSFhkhFRR1PH4ditPRf_FVIkfdK4JkRa?usp=drive_link" },

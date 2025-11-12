@@ -7,7 +7,7 @@ const tracks = [
     icon: "📚",
     title: "First Year",
     shortLabel: "FY",
-    image: "/first-year-college.jpg",
+    image: "/Images/first year.png",
     description:
       "Foundation courses and core fundamentals with curated lecture notes and PYQs.",
     bullets: [

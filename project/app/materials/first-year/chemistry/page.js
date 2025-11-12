@@ -8,10 +8,10 @@ const subjects = [
   {
     id: "bme",
     title: "Basic Mechanical Engineering",
-    image: "/btech-2nd-year.jpg",
+    image: "/Images/bme.png",
     resources: [
-      { label: "PYQs", href: "/coming-soon" },
-      { label: "Topper Notes", href: "/coming-soon" },
+      { label: "PYQs", href: "https://drive.google.com/drive/folders/1iFt8KI6RlCJuKmh_eS5BrpZTY9zceAtF?usp=drive_link" },
+      { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1LDW0nEprx0ist_bksa1yfVvkkSVUSiVY?usp=drive_link" },
       { label: "Video Playlists", href: "/coming-soon" },
       { label: "Roadmap", href: "/coming-soon" },
       { label: "PPT Links", href: "https://drive.google.com/drive/folders/1-b9UqQAlnWScESNJY44U6NHckBK5nXIz?usp=sharing" },
@@ -104,7 +104,7 @@ const subjects = [
   {
     id: "psuc",
     title: "Problem Solving Using Computers",
-    image: "https://drive.google.com/uc?export=view&id=12XnZ9NYxhznQJkrKKUo4bxUA1FPFTd9M",
+    image: "/Images/psuc.png",
     resources: [
       { label: "PYQs", href: "https://drive.google.com/drive/folders/1uCD8YvS2FX9jSoSpuRSvkeNMPVzXvg29?usp=sharing" },
       { label: "Topper Notes", href: "https://drive.google.com/drive/folders/1teWpDZeuxAY17BzwD00TMB0QCFdaoDWO?usp=sharing" },
