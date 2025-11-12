@@ -7,7 +7,7 @@ const tracks = [
     icon: "📚",
     title: "First Year",
     shortLabel: "FY",
-    image: "https://drive.google.com/file/d/12IcyZQi37bXuFb7GJ_a9BKkjtUwSiJ--/view?usp=drive_link",
+    image: "https://lh3.googleusercontent.com/d/12IcyZQi37bXuFb7GJ_a9BKkjtUwSiJ--",
     description:
       "Foundation courses and core fundamentals with curated lecture notes and PYQs.",
     bullets: [
@@ -23,7 +23,7 @@ const tracks = [
     icon: "📈",
     title: "BBA",
     shortLabel: "BBA",
-    image: "https://drive.google.com/file/d/12IcyZQi37bXuFb7GJ_a9BKkjtUwSiJ--/view?usp=drive_link",
+    image: "https://lh3.googleusercontent.com/d/12IcyZQi37bXuFb7GJ_a9BKkjtUwSiJ--",
     description:
       "Business modules, finance briefs, and case-study breakdowns tailored for MUJ BBA cohorts.",
     bullets: [
@@ -50,7 +50,7 @@ const tracks = [
     href: "/materials/btech",
     cta: "View details",
   },
-];
+];  
 
 export default function Home() {
   return (
