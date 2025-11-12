@@ -6,7 +6,7 @@ const cycles = [
     id: "physics-cycle",
     icon: "🔬",
     title: "Physics Cycle",
-    image: "/uc.webp",
+    image: "https://drive.google.com/file/d/1eDmsr_eF6MJpIFaLgFOtQBiCikJLJvvU/view?usp=drive_link",
     description:
       "Mechanics, electromagnetism, and workshop essentials bundled into ready-to-use study paths.",
     bullets: [
@@ -21,7 +21,7 @@ const cycles = [
     id: "chemistry-cycle",
     icon: "⚗️",
     title: "Chemistry Cycle",
-    image: "/uc1.webp",
+    image: "https://drive.google.com/file/d/1AysUnntx2v7zy_RP4w2wavPXw3O016nE/view?usp=drive_link",
     description:
       "Chemistry concept sprints, environmental studies briefs, and practical experiment guides.",
     bullets: [
