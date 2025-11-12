@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-
 import { useState } from "react";
 
 const years = [
@@ -92,12 +91,10 @@ export default function AIMLPage() {
             >
               {/* Image */}
               <div className="relative h-48 w-full overflow-hidden rounded-t-3xl">
-                <Image
+                <img
                   src={year.image}
                   alt={year.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-900/0" aria-hidden="true" />
                 <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-900">
